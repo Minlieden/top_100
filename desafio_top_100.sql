@@ -24,7 +24,7 @@ SELECT COUNT(DISTINCT reparto) FROM reparto;
 SELECT rango_peliculas.pelicula FROM (SELECT pelicula, ano_estreno AS "año estreno" FROM pelicula WHERE pelicula.ano_estreno BETWEEN 1990 AND 1999) AS rango_peliculas ORDER BY rango_peliculas.pelicula ASC;
 
 --Listar el reparto de las películas lanzadas el año 2001 (1 punto)
-SELECT pelicula, ano_estreno, reparto FROM pelicula LEFT JOIN reparto ON reparto.peliculas_id = pelicula.id WHERE pelicula.ano_estreno = 2001
+SELECT pelicula, ano_estreno, reparto FROM pelicula LEFT JOIN reparto ON reparto.peliculas_id = pelicula.id WHERE pelicula.ano_estreno = 2001;
 
 --Listar los actores de la película más nueva (1 punto)
 
